@@ -6,12 +6,14 @@ import './App.css'
 import AddStud from './components/AddStud'
 import SearchStud from './components/SearchStud'
 import DeleteStud from './components/DeleteStud'
+import NavigationBar from './components/NavigationBar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <NavigationBar />
       <AddStud /> 
       <SearchStud />
       <DeleteStud />
