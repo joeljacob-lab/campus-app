@@ -4,6 +4,7 @@ import AddStud from './components/AddStud'
 import SearchStud from './components/SearchStud'
 import DeleteStud from './components/DeleteStud'
 import NavigationBar from './components/NavigationBar'
+import ViewAll from './components/ViewAll'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="/" element={<AddStud />} />
         <Route path="/search" element={<SearchStud />} />
         <Route path="/delete" element={<DeleteStud />} />
-        <Route path="/view" element={<div className="container mt-3"><h3>View Student</h3></div>} />
+        <Route path="/view" element={<ViewAll />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
