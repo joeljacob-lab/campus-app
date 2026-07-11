@@ -1,27 +1,24 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const NavigationBar = () => {
     return (
         <div>
-
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <Link class="navbar-brand" to="#">Navbar</Link>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <div className="container-fluid">
+                    <Link className="navbar-brand" to="/">Campus App</Link>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <Link class="nav-link active" aria-current="page" to="/">AddStudent</Link>
-                            <Link class="nav-link" to="/search">SearchStudent</Link>
-                            <Link class="nav-link" to="/delete">DeleteStudent</Link>
-                            <Link class="nav-link" to="/view">ViewStudent</Link>
+                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div className="navbar-nav">
+                            <Link className="nav-link active" aria-current="page" to="/">Add Student</Link>
+                            <Link className="nav-link" to="/search">Search Student</Link>
+                            <Link className="nav-link" to="/delete">Delete Student</Link>
+                            <Link className="nav-link" to="/view">View Student</Link>
                         </div>
                     </div>
                 </div>
             </nav>
-
         </div>
     )
 }
